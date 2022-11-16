@@ -203,10 +203,12 @@ a {
     text-decoration: none;
 }
 
+
 hr {
-    /* background-color: #9875FB; */
+ /* background-color: #9875FB;  */
     border: 0.1px solid #9975fb1e ;
 }
+
 
 /* responsive */
 
@@ -244,3 +246,14 @@ hr {
         row-gap: 40px;
     }
 }
+
+/* form  */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 79vh;
+    margin-top: 100px;
+}
+
+
