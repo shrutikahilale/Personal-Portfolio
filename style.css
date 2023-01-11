@@ -28,8 +28,8 @@ html {
 /* nav */
 
 nav {
-    background-color: rgb(215, 214, 217,16%);
-    padding: 10px;
+    background-color: #5c4599;
+    /* padding: 10px; */
     border-radius: 10px;
 
     /* FIXED NAVBAR */
@@ -44,12 +44,8 @@ nav ul {
     gap:30px;
 }
 
-nav ul li:last-child {
-    margin-right: 20px;
-}
-
-nav a:hover {
-    color: #9875FB;
+nav ul li{
+    padding: 8px 12px;
 }
 
 /* home */
@@ -198,9 +194,12 @@ ul {
     list-style: none;
 }
 
-a {
-    color:white;
+a:link {
     text-decoration: none;
+}
+a:visited, a:active {
+    text-decoration: none;
+    color: white;
 }
 
 
