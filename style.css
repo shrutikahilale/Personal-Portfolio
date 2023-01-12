@@ -7,147 +7,143 @@ FONT SIZE SYSTEM (px)
 */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: #090514;
-    color: #fff;
-    padding:10px 30px;
-    padding-bottom: 0;
+  background-color: #090514;
+  color: #fff;
+  padding: 10px 30px;
+  padding-bottom: 0;
 
-    font-family: 'ABeeZee', sans-serif;
-    border-bottom: 20px solid #9975fb21;
+  font-family: "ABeeZee", sans-serif;
+  border-bottom: 20px solid #9975fb21;
 }
 
 /* Make scrolling easier and smoother */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* nav */
 
 nav {
-    background-color: #5c4599;
-    /* padding: 10px; */
-    border-radius: 10px;
+  background-color: #5c4599;
+  /* padding: 10px; */
+  border-radius: 10px;
 
-    /* FIXED NAVBAR */
-    position: fixed;
-    width:95%;
-    overflow: hidden;
+  /* FIXED NAVBAR */
+  position: fixed;
+  width: 95%;
+  overflow: hidden;
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap:30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
-nav ul li{
-    padding: 8px 12px;
+nav ul li {
+  padding: 8px 12px;
 }
 
 /* home */
 
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:48px;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  height: 100vh;
 }
 
-.home span {
-font-size: 30px;
-}
-
-.home p {
-    font-size: 52px;
+.heading {
+  font-size: 60px;
 }
 
 .social-icons {
-    margin: 16px 0;
-    display: flex;
-    gap:16px;
+  margin: 16px 0;
+  display: flex;
+  gap: 16px;
 }
 
-#profession {
-    font-size: 20px;
+.profession {
+  font-size: 28px;
+}
+.profession2 {
+  font-size: 16px;
 }
 
 #coder {
-    height:400px;
+  height: 400px;
 }
 
 /* about me */
 .about-me {
-    gap:20px;
+  gap: 20px;
 }
 .info {
-    width:800px;
-    display: flex;
-    flex-direction: column;
-    gap:48px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .info div {
-    display: flex;
-    align-items: flex-start;
-    gap:10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
-
-
 
 /* education */
 
 /* projects */
 
 .grid-2-cols {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
-    row-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  row-gap: 40px;
 }
 
-.divs  div{
-    display: flex;
-    align-items: center;
-    gap:20px;
+.divs div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-
 
 /* contact */
 .contact {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* background-color: #9875FB; */
-    justify-content: space-around;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #9875FB; */
+  justify-content: space-around;
+  align-items: center;
 
-    color:#9875FB;
+  color: #9875fb;
 }
 .contact li {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .contact li a {
-    color:#9875FB;
+  color: #9875fb;
 }
 
 .contact ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
 }
 .contact ul li {
-    display: flex;
-    font-size: 18px;
-    gap:30px;
+  display: flex;
+  font-size: 18px;
+  gap: 30px;
 }
 
 /* footer */
@@ -158,101 +154,97 @@ font-size: 30px;
     color:#9875FB;
 } */
 
-
 /* Utility */
 
 .section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-.divs  {
-    border: 2px solid  #9875FB;
-    padding: 16px 24px;
-    border-radius: 10px;
+.divs {
+  border: 2px solid #9875fb;
+  padding: 16px 24px;
+  border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:10px;
-    font-size: 36px;
-    color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 36px;
+  color: white;
 }
 h3 {
-    display: flex;
-    align-items: center;
-    gap:10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
 }
-a:visited, a:active {
-    text-decoration: none;
-    color: white;
+a:visited,
+a:active {
+  text-decoration: none;
+  color: white;
 }
-
 
 hr {
- /* background-color: #9875FB;  */
-    border: 0.1px solid #9975fb1e ;
+  /* background-color: #9875FB;  */
+  border: 0.1px solid #9975fb1e;
 }
-
 
 /* responsive */
 
-
 @media (max-width: 1000px) {
-    nav {
-        width:90%;
-    }
-    nav ul {
-        display: flex;
-        justify-content: center;
-        gap:30px;
-    }
-    #coder {
-        display: none;
-    }
-    .my-intro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .info  {
-        width:100%;
-        flex-wrap:wrap;
-    }
+  nav {
+    width: 90%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #coder {
+    display: none;
+  }
+  .my-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 700px) {
-    .education {
-        height: 130vh;
-    }
-    .grid-2-cols {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        column-gap: 80px;
-        row-gap: 40px;
-    }
+  .education {
+    height: 130vh;
+  }
+  .grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 80px;
+    row-gap: 40px;
+  }
 }
 
 /* form  */
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 79vh;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 79vh;
+  margin-top: 100px;
 }
-
-
