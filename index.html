@@ -123,56 +123,65 @@
         <h2><img src="images/project.png" alt="">Projects</h2>
 
         <!-- 2 projects in one row -->
-        <div class="grid-2-cols">
-            <div class="divs">
-                <h3 class="project-title">Personal Portfolio</h3>
-                <div>
-                    <img src="images/project-management.png" alt="">
-                    <p>Techologies used: HTML, CSS.</p>
+        <div class="container">
+
+            <button class="back" onclick="changeSlide(-1)">&#10094;</button>
+
+            <div class="carousel-container">
+                <div class="pro-div carousel-item">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <div>
+                        <img src="images/project-management.png" alt="">
+                        <p>Techologies used: HTML, CSS, JS.</p>
+                    </div>
+                    <div>
+                        <img src="images/laptop.png" alt="">
+                        <p>IDE: Visual Studio Code.</p>
+                    </div>
+                    <div class="link">
+                        <img src="images/link.png" alt="">
+                        <p><a href="https://github.com/shrutikahilale/Personal-Portfolio/blob/main/README.md"
+                                target="_blank">Link
+                            </a></p>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/laptop.png" alt="">
-                    <p>IDE: Visual Studio Code.</p>
+
+                <div class="pro-div carousel-item">
+                    <h3 class="project-title">Consistency Tracker App </h3>
+                    <div>
+                        <img src="images/project-management.png" alt="">
+                        <p>Techologies used: Flutter framework, api, flcharts, firebase</p>
+                    </div>
+                    <div>
+                        <img src="images/laptop.png" alt="">
+                        <p>IDE: Visual Studio Code with emulator.</p>
+                    </div>
+                    <div class="link">
+                        <img src="images/link.png" alt="">
+                        <p><a href="https://github.com/shrutikahilale/Consistency-Tracker-App" target="_blank">Link</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="link">
-                    <img src="images/link.png" alt="">
-                    <p><a href="https://github.com/shrutikahilale/Personal-Portfolio/blob/main/README.md"
-                            target="_blank">Link
-                        </a></p>
+
+                <div class="pro-div carousel-item">
+                    <h3 class="project-title">Library Management System <em>[Group project]</em></h3>
+                    <div>
+                        <img src="images/project-management.png" alt="">
+                        <p>Techologies used: Python, MongoDB.</p>
+                    </div>
+                    <div>
+                        <img src="images/laptop.png" alt="">
+                        <p>IDE: Visual Studio Code.</p>
+                    </div>
+                    <div class="link">
+                        <img src="images/link.png" alt="">
+                        <p><a href="https://github.com/shrutikahilale/ITL_Project" target="_blank">Link</a></p>
+                    </div>
                 </div>
             </div>
 
-            <div class="divs">
-                <h3 class="project-title">Consistency Tracker App </h3>
-                <div>
-                    <img src="images/project-management.png" alt="">
-                    <p>Techologies used: Flutter framework, api, flcharts, firebase</p>
-                </div>
-                <div>
-                    <img src="images/laptop.png" alt="">
-                    <p>IDE: Visual Studio Code with emulator.</p>
-                </div>
-                <div class="link">
-                    <img src="images/link.png" alt="">
-                    <p><a href="https://github.com/shrutikahilale/Consistency-Tracker-App" target="_blank">Link</a></p>
-                </div>
-            </div>
+            <button class="front" onclick="changeSlide(1)">&#10095;</button>
 
-            <div class="divs">
-                <h3 class="project-title">Library Management System <em>[Group project]</em></h3>
-                <div>
-                    <img src="images/project-management.png" alt="">
-                    <p>Techologies used: Python, MongoDB.</p>
-                </div>
-                <div>
-                    <img src="images/laptop.png" alt="">
-                    <p>IDE: Visual Studio Code.</p>
-                </div>
-                <div class="link">
-                    <img src="images/link.png" alt="">
-                    <p><a href="https://github.com/shrutikahilale/ITL_Project" target="_blank">Link</a></p>
-                </div>
-            </div>
         </div>
     </section>
     <hr>
@@ -204,5 +213,8 @@
 <script>
     // default
     changeBg(0);
+
+    slideShow(0);
 </script>
+
 </html>

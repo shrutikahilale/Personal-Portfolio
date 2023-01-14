@@ -9,6 +9,7 @@ FONT SIZE SYSTEM (px)
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: #090514;
@@ -101,6 +102,12 @@ nav ul li {
 /* education */
 
 /* projects */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .grid-2-cols {
   display: grid;
@@ -109,10 +116,47 @@ nav ul li {
   row-gap: 40px;
 }
 
-.divs div {
+.pro-div {
+  width: 32rem;
+  height: 14rem;
+
+  border: 2px solid #9875fb;
+  padding: 16px 24px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pro-div div {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.front,
+.back {
+  font-size: 2rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  transition: font-size 0.25s ease-in-out;
+}
+.front:hover,
+.back:hover {
+  font-size: 4rem;
+}
+.front:active {
+  box-shadow: 5px 0px 3px #fff;
+}
+
+.back:active {
+  box-shadow: -5px 0px 3px #fff;
 }
 
 /* contact */
