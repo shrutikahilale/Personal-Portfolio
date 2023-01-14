@@ -16,28 +16,28 @@ Used components like:
  
  1. Home
  
-![Screenshot 2022-10-23 185540](https://user-images.githubusercontent.com/102667828/197395552-e333d304-1831-4a63-8d4f-948b36e8756a.png)
+![p1](https://user-images.githubusercontent.com/102667828/212478944-7e452323-5d24-4332-b9e5-0319e2f95497.png)
+
 
 2. About me
 
-![Screenshot 2022-10-23 191032](https://user-images.githubusercontent.com/102667828/197395669-3ccd7cf4-8a90-45af-b901-b7543d533fa0.png)
+![p2](https://user-images.githubusercontent.com/102667828/212478995-88bfd941-e39b-4b90-852e-78edd7bb5860.png)
+
 
 3. Education section
 
-![Screenshot 2022-10-23 191043](https://user-images.githubusercontent.com/102667828/197395672-aad38286-5f15-465d-abc2-ee71b2985022.png)
+![p3](https://user-images.githubusercontent.com/102667828/212478999-68456436-0ec9-43bd-a87e-a9e5e37baa19.png)
+
 
 4. Projects section
 
-![Screenshot 2022-10-23 191051](https://user-images.githubusercontent.com/102667828/197395673-f5d4ac48-aaa5-4c34-b8ab-7e38d8f10d06.png)
+![p4](https://user-images.githubusercontent.com/102667828/212479001-322cdf21-e8fb-465e-ab68-00083f3f15f4.png)
+
 
 5. Contact section
 
-![Screenshot 2022-10-23 191100](https://user-images.githubusercontent.com/102667828/197395676-afd73b0f-eb5d-47c3-ab91-acd8aa0c06b8.png)
+![p5](https://user-images.githubusercontent.com/102667828/212479002-3396605e-d912-433e-947d-48241ae4e61f.png)
 
-Responsive Website: 
+6. Form 
 
-![Screenshot 2022-10-23 191119](https://user-images.githubusercontent.com/102667828/197395680-cd84776e-d716-4fe8-971f-1da832f5c4be.png)
-
-![Screenshot 2022-10-23 191130](https://user-images.githubusercontent.com/102667828/197395681-69b34774-4ad6-4614-bde4-d4423453a137.png)
-
-![Screenshot 2022-10-23 191139](https://user-images.githubusercontent.com/102667828/197395683-4b2e2f5e-5ac2-47df-bec5-2b4bbeed9f6e.png)
+![p6](https://user-images.githubusercontent.com/102667828/212479010-58e01839-a217-487a-a64c-d788e2cc5e18.png)
