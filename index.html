@@ -5,32 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shrutika Hilale - Tech Enthusiast</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <script src="index.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
 
-    <script src="index.js"></script>
+    <title>Shrutika Hilale - Tech Enthusiast</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <a href="#home" id="1" onclick="changeBg('1')">
+            <a href="#home" onclick="changeBg(0)" class="nav-links">
                 <li>Home</li>
             </a>
-            <a href="#aboutme" id="2" onclick="changeBg('2')">
+            <a href="#aboutme" onclick="changeBg(1)" class="nav-links">
                 <li>About me</li>
             </a>
-            <a href="#education" id="3" onclick="changeBg('3')">
+            <a href="#education" onclick="changeBg(2)" class="nav-links">
                 <li>Education</li>
             </a>
-            <a href="#projects" id="4" onclick="changeBg('4')">
+            <a href="#projects" onclick="changeBg(3)" class="nav-links">
                 <li>Projects</li>
             </a>
-            <a href="#contact" id="5" onclick="changeBg('5')">
+            <a href="#contact" onclick="changeBg(4)" class="nav-links">
                 <li>Contact</li>
             </a>
         </ul>
@@ -200,10 +202,7 @@
 </body>
 
 <script>
-    // default behaviour
-    document.getElementById(1).style.backgroundColor = "#fff";
-    document.getElementById(1).style.color = "#9875FB";
-    document.getElementById(1).style.fontWeight = "700";
+    // default
+    changeBg(0);
 </script>
-
 </html>

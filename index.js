@@ -1,12 +1,17 @@
+var currentLink = 0;
+// changeBg(currentLink);
+
 function changeBg(idx) {
-  for (let i = 1; i < 6; i++) {
-    if (i == idx) {
-      document.getElementById(i).style.backgroundColor = "#fff";
-      document.getElementById(i).style.color = "#9875FB";
-      document.getElementById(i).style.fontWeight = "700";
-    } else {
-      document.getElementById(i).style.backgroundColor = "#5c4599";
-      document.getElementById(i).style.color = "#fff";
-    }
+  var nav_links = document.getElementsByClassName("nav-links");
+
+  for (let i = 0; i < nav_links.length; i++) {
+    nav_links[i].style.backgroundColor = "#5c4599";
+    nav_links[i].style.color = "#fff";
   }
+
+  currentLink = idx;
+
+  nav_links[currentLink].style.backgroundColor = "#fff";
+  nav_links[currentLink].style.color = "#9875FB";
+  nav_links[currentLink].style.fontWeight = "700";
 }
