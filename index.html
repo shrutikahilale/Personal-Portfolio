@@ -17,8 +17,8 @@
     <title>Shrutika Hilale - Tech Enthusiast</title>
 </head>
 
-<body>
-    <nav>
+<body class="light dark" id="body">
+    <nav class="nav-light nav-dark" id="nav-bar">
         <ul>
             <a href="#home" onclick="changeBg(0)" class="nav-links">
                 <li>Home</li>
@@ -37,6 +37,10 @@
             </a>
         </ul>
     </nav>
+
+    <div class="theme-bg light-bg dark-bg" id="theme-bg">
+        <a href="#" onclick="changeTheme()"><img src="images/sun.png" id="theme-icon"></a>
+    </div>
 
     <section id="home" class="home">
         <!-- My Introduction -->
@@ -80,8 +84,7 @@
                     <p>
                         I am a self taught learner and developer, who loves to learn constantly, be consistent and
                         always strive to make improvements.
-                        I'm currently learning <strong><em style="color: #a989ff;">Javascript</em></strong> to enhance
-                        my web development skills.
+                        I'm currently learning Javascript to enhance my web development skills.
                     </p>
                 </div>
                 <div>
@@ -125,10 +128,10 @@
         <!-- 2 projects in one row -->
         <div class="container">
 
-            <button class="back" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="back" onclick="changeSlide(-1)" id="back">&#10094;</button>
 
             <div class="carousel-container">
-                <div class="pro-div carousel-item">
+                <div class="pro-div carousel-item light dark">
                     <h3 class="project-title">Personal Portfolio</h3>
                     <div>
                         <img src="images/project-management.png" alt="">
@@ -146,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="pro-div carousel-item">
+                <div class="pro-div carousel-item light dark">
                     <h3 class="project-title">Consistency Tracker App </h3>
                     <div>
                         <img src="images/project-management.png" alt="">
@@ -163,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="pro-div carousel-item">
+                <div class="pro-div carousel-item light dark">
                     <h3 class="project-title">Library Management System <em>[Group project]</em></h3>
                     <div>
                         <img src="images/project-management.png" alt="">
@@ -180,7 +183,7 @@
                 </div>
             </div>
 
-            <button class="front" onclick="changeSlide(1)">&#10095;</button>
+            <button class="front" onclick="changeSlide(1)" id="front">&#10095;</button>
 
         </div>
     </section>
@@ -191,20 +194,20 @@
         <ul>
             <li>
                 <img src="images/github-logo.png" alt="">
-                <a href="https://github.com/shrutikahilale" target="_blank">Github</a>
+                <a href="https://github.com/shrutikahilale" target="_blank" class="contact-link">Github</a>
             </li>
             <li>
                 <img src="images/linkedin.png" alt="">
-                <a href="https://www.linkedin.com/in/shrutikahilale24/" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/shrutikahilale24/" target="_blank" class="contact-link">LinkedIn</a>
             </li>
             <li>
                 <img src="images/donwload-button.png" alt="">
-                <a href="Resume.pdf" target="_blank">Download CV</a>
+                <a href="Resume.pdf" target="_blank" class="contact-link">Download CV</a>
             </li>
             <hr>
             <li>
                 <img src="images/send.png" alt="">
-                <a href="/form.html">Get in Touch! Fill the form here</a>
+                <a href="/form.html" class="contact-link">Get in Touch! Fill the form here</a>
             </li>
         </ul>
     </section>

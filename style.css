@@ -6,19 +6,36 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+/* Colors
+
+font-color:  
+body: #fff
+contact-links: color: #9875fb
+
+nav bar: #5c4599
+bgcol: #090514 (body)
+
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #090514;
-  color: #fff;
   padding: 10px 30px;
   padding-bottom: 0;
 
   font-family: "ABeeZee", sans-serif;
   border-bottom: 20px solid #9975fb21;
+}
+.light {
+  background-color: #d8caff;
+  color: #090514;
+}
+.dark {
+  background-color: #090514;
+  color: #fff;
 }
 
 /* Make scrolling easier and smoother */
@@ -27,9 +44,7 @@ html {
 }
 
 /* nav */
-
 nav {
-  background-color: #5c4599;
   /* padding: 10px; */
   border-radius: 10px;
 
@@ -37,6 +52,12 @@ nav {
   position: fixed;
   width: 95%;
   overflow: hidden;
+}
+.nav-light {
+  background-color: #8b6ae8;
+}
+.nav-dark {
+  background-color: #5c4599;
 }
 
 nav ul {
@@ -47,6 +68,7 @@ nav ul {
 
 nav ul li {
   padding: 8px 12px;
+  color: #fff;
 }
 
 /* home */
@@ -151,30 +173,20 @@ nav ul li {
 .back:hover {
   font-size: 4rem;
 }
-.front:active {
-  box-shadow: 5px 0px 3px #fff;
-}
-
-.back:active {
-  box-shadow: -5px 0px 3px #fff;
-}
 
 /* contact */
 .contact {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background-color: #9875FB; */
   justify-content: space-around;
   align-items: center;
-
-  color: #9875fb;
 }
 .contact li {
   font-size: 20px;
 }
 
-.contact li a {
+.contact-link {
   color: #9875fb;
 }
 
@@ -235,12 +247,10 @@ ul {
 
 a:link {
   text-decoration: none;
-  color: white;
 }
 a:visited,
 a:active {
   text-decoration: none;
-  color: white;
 }
 
 hr {
@@ -291,4 +301,31 @@ hr {
   align-items: center;
   height: 79vh;
   margin-top: 100px;
+}
+
+/* LIGHT AND DARK THEME ICON */
+
+.theme-bg {
+  padding: 0.6rem;
+  position: absolute;
+  right: 0rem;
+  top: 5rem;
+
+  height: 48px;
+
+  width: 4rem;
+  border-top-left-radius: 34%;
+  border-bottom-left-radius: 34%;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.dark-bg {
+  background-color: #090514;
+}
+
+.light-bg {
+  background-color: white;
 }
