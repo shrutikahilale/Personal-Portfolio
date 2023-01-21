@@ -1,5 +1,4 @@
 // NAV-LINKS
-
 var currentLink = 0;
 
 function changeBg(idx) {
