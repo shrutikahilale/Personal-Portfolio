@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form_style.css">
 </head>
 
 <body>
@@ -28,11 +28,7 @@
                 <textarea rows="2" cols="50" class="form-control" id="exampleMessage"></textarea>
 
             </div>
-            <!-- <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-            <button type="button" class="btn btn-primary" onclick="backtohome()">Submit</button>
+            <button type="button" class="btn btn-primary" onclick="submitAndbacktohome()">Submit</button>
             <button type="button" class="btn btn-primary" onclick="backtohome()">Back to home</button>
         </form>
     </div>
@@ -42,6 +38,18 @@
     function backtohome() {
         window.location.href = "index.html";
     }
+
+    // back to home
+    function submitAndbacktohome() {
+        if (document.querySelector('input').value != "" && document.querySelector('textarea').value != "") {
+            window.location.href = "index.html";
+        }
+        else {
+            alert('Please enter required details')
+        }
+    }
+
+
 </script>
 
 </html>
