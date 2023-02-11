@@ -85,6 +85,10 @@ nav ul li {
   font-size: 60px;
 }
 
+.heading2 {
+  visibility: hidden;
+}
+
 .social-icons {
   margin: 16px 0;
   display: flex;
@@ -284,8 +288,69 @@ hr {
     width: 100%;
     flex-wrap: wrap;
   }
+
+  .heading {
+    visibility: hidden;
+  }
+
+  .heading2 {
+    visibility:visible;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .profession, .profession2 {    
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .my-intro {
+    justify-content: center;
+    align-items: center;
+  }
+
+    /* reduce font sizes */
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .divs p {
+    font-size: 12px;
+  }
+  
+  img {
+    height: 28px;
+  }
+  
+  .info p {
+    font-size: 16px;
+  }
+
+  .pro-div {
+    font-size: 12px;
+    width: 20rem;
+    height: 11rem;
+    justify-content: center;
+    gap:0rem;
+  }
+  .pro-div div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .project-title {
+    font-size: 14px;
+  }
+
+  .contact-link{
+    font-size: 14px;
+  }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .education {
     height: 130vh;
   }
@@ -294,7 +359,9 @@ hr {
     grid-template-columns: repeat(1, 1fr);
     column-gap: 80px;
     row-gap: 40px;
-  }
+  }  
+
+  /* REMOVE NAV BAR AND INSERT HAMBURDGER ICON */
 }
 
 /* form  */
