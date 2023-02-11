@@ -267,7 +267,7 @@ hr {
 
 /* responsive */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   nav {
     width: 90%;
   }
