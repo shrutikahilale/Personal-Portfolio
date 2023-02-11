@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hamburger-menu.css">
 
     <script src="index.js"></script>
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,18 +40,35 @@
         </ul>
     </nav>
 
+    <!-- hamburger-menu -->
+    <div class="nav-bar-menu" id="nav-bar-menu">
+        <div class="menu-icon" id="menu-icon">
+            <div class="first-line hr-line" id="first-line"></div>
+            <div class="second-line hr-line" id="second-line"></div>
+            <div class="third-line hr-line" id="third-line"></div>
+        </div>
+        <div class="nav-menu-links" id="nav-menu-links">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">About me</a></div>
+            <div><a href="#">Education</a></div>
+            <div><a href="#">Projects</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    </div>
+
     <div class="theme-bg light-bg dark-bg" id="theme-bg">
         <a href="#" onclick="changeTheme()"><img src="images/sun.png" id="theme-icon"></a>
     </div>
 
+    <!-- My Introduction -->
     <section id="home" class="home">
-        <!-- My Introduction -->
         <div class="my-intro">
-            <p class="heading">Hello<br> I'm Shrutika Hilale.</p>
-            <p class="heading2">Hello, I'm Shrutika Hilale.</p>
-            <p class="profession">A Coding enthusiast.</p>
-            <br>
-            <p class="profession2">DSA | HTML | CSS | Flutter</p>
+            <div class="intro-lines">
+                <div class="heading">Hello!</div>
+                <div class="heading">I'm Shrutika Hilale</div>
+                <div class="sec-heading">A coding enthusiast</div>
+                <div>DSA | HTML | CSS | JS | Flutter</div>
+            </div>
             <div class="social-icons">
                 <a href="https://github.com/shrutikahilale" target="_blank"><img src="images/github-logo.png"
                         alt=""></a>
@@ -57,21 +76,16 @@
                         alt=""></a>
             </div>
         </div>
-
-        <!-- My profile picture -->
         <img id="coder" src="images/coder (1).png" alt="">
     </section>
 
     <hr>
 
+    <!-- About me -->
     <section id="aboutme" class="about-me section">
         <h2><img src="images/girl.png" alt="">About me</h2>
 
         <div class="my-info-section">
-            <!-- Image -->
-            <!-- <img src="" alt=""> -->
-
-            <!-- About me -->
             <div class="info">
                 <div>
                     <img src="images/graduation-hat.png" alt="">
@@ -238,5 +252,5 @@
 
     slideShow(0);
 </script>
-
+<script src="hamburger-menu.js"></script>
 </html>
