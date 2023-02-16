@@ -107,6 +107,7 @@ nav ul li {
 }
 
 /* about me */
+
 .about-me {
   gap: 20px;
 }
@@ -123,6 +124,8 @@ nav ul li {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+
+  text-align: justify;
 }
 
 /* education */
