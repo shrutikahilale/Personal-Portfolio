@@ -22,17 +22,16 @@ bgcol: #090514 (body)
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  padding: 10px 30px;
-  padding-bottom: 0;
 
-  font-family: "ABeeZee", sans-serif;
-  border-bottom: 20px solid #9975fb21;
+body {
+  font-family: "Poppins", sans-serif;
 }
+
 .light {
   background-color: #d8caff;
   color: #090514;
 }
+
 .dark {
   background-color: #090514;
   color: #fff;
@@ -43,33 +42,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* nav */
-nav {
-  /* padding: 10px; */
-  border-radius: 10px;
-
-  /* FIXED NAVBAR */
-  position: fixed;
-  width: 95%;
-  overflow: hidden;
-}
-.nav-light {
-  background-color: #8b6ae8;
-}
-.nav-dark {
-  background-color: #5c4599;
-}
-
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-}
-
-nav ul li {
-  padding: 8px 12px;
-  color: #fff;
-}
 
 /* home */
 
@@ -77,27 +49,30 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 10rem;
   height: 100vh;
 }
 
 .intro-lines {
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  align-items: center;
+  gap: 1rem;
 }
 
-.heading {
-  font-size: 4rem;
+.greet,
+.name {
+  font-size: 3rem;
 }
 
-.sec-heading {
-  font-size: 2rem;
+.catch-up-line {
+  font-size: 1.5rem;
 }
 
 .social-icons {
   margin: 16px 0;
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -111,6 +86,7 @@ nav ul li {
 .about-me {
   gap: 20px;
 }
+
 .info {
   width: 800px;
   display: flex;
@@ -179,12 +155,13 @@ nav ul li {
 
 /* contact */
 .contact {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
 .contact li {
   font-size: 20px;
 }
@@ -199,22 +176,14 @@ nav ul li {
   justify-content: space-around;
   gap: 20px;
 }
+
 .contact ul li {
   display: flex;
   font-size: 18px;
   gap: 30px;
 }
 
-/* footer */
-/* footer {
-    text-align: center;
-    margin-top: 20px;
-    padding:2px 0;
-    color:#9875FB;
-} */
-
 /* Utility */
-
 .section {
   height: 100vh;
   display: flex;
@@ -232,22 +201,26 @@ nav ul li {
   flex-direction: column;
   gap: 10px;
 }
+
 h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 36px;
+  font-size: 2rem;
   color: white;
 }
+
 h3 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   color: white;
 }
@@ -255,9 +228,14 @@ a {
 a:link {
   text-decoration: none;
 }
+
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 hr {
@@ -266,23 +244,27 @@ hr {
 }
 
 /* responsive */
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 800px) {
   .nav-bar-menu {
     visibility: hidden;
   }
 }
+
 @media only screen and (max-width: 1100px) {
   nav {
     width: 90%;
   }
+
   nav ul {
     display: flex;
     justify-content: center;
     gap: 30px;
   }
+
   #coder {
     display: none;
   }
+
   /* home */
   .my-intro {
     display: flex;
@@ -290,17 +272,21 @@ hr {
     align-items: center;
     justify-content: center;
   }
+
   .info {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .intro-lines {
     justify-content: center;
     align-items: center;
   }
+
   .heading {
     font-size: 1.8rem;
   }
+
   .sec-heading {
     font-size: 1rem;
   }
@@ -317,11 +303,11 @@ hr {
   .divs p {
     font-size: 12px;
   }
-  
+
   img {
     height: 28px;
   }
-  
+
   .info p {
     font-size: 16px;
   }
@@ -331,48 +317,53 @@ hr {
     width: 20rem;
     height: 11rem;
     justify-content: center;
-    gap:0rem;
+    gap: 0rem;
   }
+
   .pro-div div {
     display: flex;
     align-items: center;
     gap: 10px;
   }
+
   .project-title {
     font-size: 14px;
   }
 
-  .contact-link{
+  .contact-link {
     font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .education {
     height: 130vh;
   }
+
   .grid-2-cols {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 80px;
     row-gap: 40px;
-  }  
+  }
 
   /* hide navbar */
   #nav-bar {
     display: none;
   }
 
-  .section{
-    justify-content:  center;
+  .section {
+    justify-content: center;
     align-items: center;
-    gap:3rem;
+    gap: 3rem;
     height: 90vh;
   }
+
   .contact {
     height: 60vh;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    gap:3rem;
+    gap: 3rem;
   }
 }
 
@@ -398,8 +389,8 @@ hr {
   padding: 0.6rem;
   /* fixed button */
   position: fixed;
-  right:0;
-  top:5rem;
+  right: 0;
+  top: 5rem;
 
   height: 48px;
 

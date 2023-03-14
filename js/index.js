@@ -1,17 +1,3 @@
-// NAV-LINKS
-var currentLink = 0;
-
-function changeBg(idx) {
-  var nav_links = document.getElementsByClassName("nav-links");
-
-  for (let i = 0; i < nav_links.length; i++) {
-    nav_links[currentLink].style.fontWeight = "normal";
-  }
-
-  currentLink = idx;
-  nav_links[currentLink].style.fontWeight = "700";
-}
-
 // CAROUSEL
 var currentSlide = 0;
 
@@ -60,6 +46,10 @@ function changeTheme() {
     // navbar
     document.getElementById("nav-bar").classList.remove("nav-dark");
     document.getElementById("nav-bar").classList.add("nav-light");
+    var navlinks = document.getElementsByClassName('nav-links')
+    for (let i = 0; i < navlinks.length; i++) {
+      navlinks[i].style.color = '#090514'
+    }
 
     // h2 tags
     var h2tags = document.getElementsByTagName("h2");
@@ -70,7 +60,7 @@ function changeTheme() {
     // carousel front and back arrows
     document.getElementById("back").style.color = "#29165b";
     document.getElementById("front").style.color = "#29165b";
-    
+
     // contact-links
     var contactLinks = document.getElementsByClassName("contact-link");
     for (let i = 0; i < contactLinks.length; i++) {
@@ -94,10 +84,18 @@ function changeTheme() {
       h2tags[i].style.color = "#fff";
     }
 
+    // navbar
+    document.getElementById("nav-bar").classList.add("nav-dark");
+    document.getElementById("nav-bar").classList.remove("nav-light");
+    var navlinks = document.getElementsByClassName('nav-links')
+    for (let i = 0; i < navlinks.length; i++) {
+      navlinks[i].style.color = '#fff'
+    }
+
     // carousel front and back arrows
     document.getElementById("back").style.color = "#fff";
     document.getElementById("front").style.color = "#fff";
-        
+
     // contact-links
     var contactLinks = document.getElementsByClassName("contact-link");
     for (let i = 0; i < contactLinks.length; i++) {

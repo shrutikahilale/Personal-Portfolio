@@ -9,37 +9,28 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger-menu.css">
-
+    <link rel="stylesheet" href="css/navbar.css">
     <!-- js -->
     <script src="js/index.js"></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <title>Shrutika Hilale - Tech Enthusiast</title>
 </head>
 
 <body class="light dark" id="body">
-    <nav class="nav-light nav-dark" id="nav-bar">
-        <ul>
-            <a href="#home" onclick="changeBg(0)" class="nav-links">
-                <li>Home</li>
-            </a>
-            <a href="#aboutme" onclick="changeBg(1)" class="nav-links">
-                <li>About me</li>
-            </a>
-            <a href="#education" onclick="changeBg(2)" class="nav-links">
-                <li>Education</li>
-            </a>
-            <a href="#projects" onclick="changeBg(3)" class="nav-links">
-                <li>Projects</li>
-            </a>
-            <a href="#contact" onclick="changeBg(4)" class="nav-links">
-                <li>Contact</li>
-            </a>
-        </ul>
+
+
+    <nav id="nav-bar" class="nav-dark">
+        <a href="#home" class="nav-links">Home</a>
+        <a href="#aboutme" class="nav-links">About me</a>
+        <a href="#education" class="nav-links">Education</a>
+        <a href="#projects" class="nav-links">Projects</a>
+        <a href="#contact" class="nav-links">Contact</a>
+
     </nav>
 
     <!-- hamburger-menu -->
@@ -49,33 +40,34 @@
             <div class="second-line hr-line" id="second-line"></div>
             <div class="third-line hr-line" id="third-line"></div>
         </div>
-        <div class="nav-menu-links" id="nav-menu-links">
+        <!-- <div class="nav-menu-links" id="nav-menu-links">
             <div><a href="#">Home</a></div>
             <div><a href="#">About me</a></div>
             <div><a href="#">Education</a></div>
             <div><a href="#">Projects</a></div>
             <div><a href="#">Contact</a></div>
-        </div>
+        </div> -->
     </div>
 
     <div class="theme-bg light-bg dark-bg" id="theme-bg">
-        <a href="#" onclick="changeTheme()"><img src="images/sun.png" id="theme-icon"></a>
+        <p href="#" onclick="changeTheme()"><img src="images/sun.png" id="theme-icon"></p>
     </div>
 
     <!-- My Introduction -->
     <section id="home" class="home">
         <div class="my-intro">
             <div class="intro-lines">
-                <div class="heading">Hello!</div>
-                <div class="heading">I'm Shrutika Hilale</div>
-                <div class="sec-heading">A coding enthusiast</div>
-                <div>DSA | HTML | CSS | JS | Flutter</div>
+                <div class="greet">Hello👋</div>
+                <div class="name">I'm Shrutika Hilale </div>
+                <div class="catch-up-line">A coding enthusiast 👩‍💻</div>
+                <div>React.JS | HTML | CSS | JS | Flutter</div>
             </div>
+
             <div class="social-icons">
                 <a href="https://github.com/shrutikahilale" target="_blank"><img src="images/github-logo.png"
-                        alt=""></a>
+                        alt="github-icon"></a>
                 <a href="https://www.linkedin.com/in/shrutikahilale24/" target="_blank"><img src="images/linkedin.png"
-                        alt=""></a>
+                        alt="linkedin-icon"></a>
             </div>
         </div>
         <img id="coder" src="images/profile_pic.png" alt="">
@@ -92,22 +84,20 @@
                 <div>
                     <img src="images/graduation-hat.png" alt="">
                     <p>
-                        Currently, a TY student, pursuing my B.Tech at Vishwakarma Institute of Information Technology,
-                        Pune.
+                        TY CSE Undergrad, pursuing B.Tech at Vishwakarma Institute of Information Technology, Pune.
                     </p>
                 </div>
                 <div>
                     <img src="images/online-learning.png" alt="">
                     <p>
-                        A self taught developer, who loves to learn constantly and
-                        always strive to make improvements.
-                        Currently learning Javascript to enhance my web development skills.
+                        A self taught developer, who loves to learn and always strive to make improvements.
                     </p>
                 </div>
                 <div>
                     <img src="images/puzzle.png" alt="">
                     <p>
-                        My hobbies include painting and singing. In my free time I explore my ui design skills.
+                        My hobbies include painting and singing. In my free time I explore my UI design skills on Figma
+                        tool.
                     </p>
                 </div>
 
@@ -120,20 +110,23 @@
         <h2><img src="images/graduated (1).png" alt="">Education</h2>
         <div class="grid-2-cols">
             <div class="divs">
-                <h3><img src="images/star (1).png" alt=""> 10th Board</h3>
-                <p> - Vidya Pratishthan's New Bal Vikas Mandir, Baramati</p>
-                <p> - Marks: 94.20%</p>
+                <h3><img src="images/star (1).png" alt="">B.TECH</h3>
+                <p> Vishwakarma Institute of Information Technology, Pune</p>
+                <p> - [2020-2024]</p>
+                <p> - CGPA: 9.96</p>
             </div>
             <div class="divs">
                 <h3><img src="images/star (1).png" alt="">12th Board</h3>
-                <p> - Chaitanya's International School, Medad</p>
-                <p> - Marks: 88.46%</p>
+                <p> Chaitanya's International School, Medad </p>
+                <p> - [2018-2020] </p>
                 <p> - MHT-CET: 99.15 percentile</p>
+                <p> - HSC: 88.46%</p>
             </div>
             <div class="divs">
-                <h3><img src="images/star (1).png" alt="">B.TECH</h3>
-                <p> - Vishwakarma Institute of Information Technology, Pune</p>
-                <p> - CGPA: 9.96</p>
+                <h3><img src="images/star (1).png" alt=""> 10th Board</h3>
+                <p> Vidya Pratishthan's New Bal Vikas Mandir, Baramati </p>
+                <p> - [2017-2018]</p>
+                <p> - SSC: 94.20%</p>
             </div>
         </div>
     </section>
@@ -249,9 +242,6 @@
 </body>
 
 <script>
-    // default
-    changeBg(0);
-
     slideShow(0);
 </script>
 <script src="js/hamburger-menu.js"></script>

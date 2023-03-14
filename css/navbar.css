@@ -1,0 +1,24 @@
+nav {
+    /* FIXED NAVBAR */
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+.nav-links {
+    padding: 8px 12px;
+    color: #fff;
+}
+
+.nav-light {
+    background-color: #d8caff;
+}
+
+.nav-dark {
+    background-color: #090514;
+}
