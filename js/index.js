@@ -51,6 +51,10 @@ function changeTheme() {
       navlinks[i].style.color = '#090514'
     }
 
+    let hrlines = document.getElementsByClassName('hr-line')
+    for (let i = 0; i < 3; i++)
+      hrlines[i].style.backgroundColor = "#29165b"
+
     // h2 tags
     var h2tags = document.getElementsByTagName("h2");
     for (let i = 0; i < h2tags.length; i++) {
@@ -91,6 +95,9 @@ function changeTheme() {
     for (let i = 0; i < navlinks.length; i++) {
       navlinks[i].style.color = '#fff'
     }
+
+    let hrlines = document.getElementsByClassName('hr-line')
+    for (let i = 0; i < 3; i++) hrlines[i].style.backgroundColor = '#fff'
 
     // carousel front and back arrows
     document.getElementById("back").style.color = "#fff";

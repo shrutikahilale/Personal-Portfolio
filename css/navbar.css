@@ -8,6 +8,8 @@ nav {
     justify-content: flex-end;
     gap: 20px;
     font-size: 0.9rem;
+
+    padding-right: 2rem;
 }
 
 .nav-links {
