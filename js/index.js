@@ -1,29 +1,3 @@
-// CAROUSEL
-var currentSlide = 0;
-
-function changeSlide(incr) {
-  currentSlide += incr;
-  slideShow(currentSlide);
-}
-
-function slideShow(idx) {
-  var slides = document.getElementsByClassName("carousel-item");
-
-  if (idx >= slides.length) {
-    currentSlide = 0;
-  } else if (idx < 0) {
-    currentSlide = slides.length - 1;
-  }
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[currentSlide].style.display = "flex";
-  slides[currentSlide].style.flexdirection = "column";
-  slides[currentSlide].style.gap = "16px";
-}
-
 // LIGHT DARK THEME TOGGLE
 var currTheme = "dark";
 
@@ -32,9 +6,9 @@ function changeTheme() {
   var theme_bg = document.getElementById("theme-bg");
 
   if (currTheme == "dark") {
-    theme.src = "images/moon.png";
     currTheme = "light";
 
+    theme.src = "images/moon.png";
     // theme-icon
     theme_bg.classList.remove("light-bg");
     theme_bg.classList.add("dark-bg");
@@ -50,6 +24,11 @@ function changeTheme() {
     for (let i = 0; i < navlinks.length; i++) {
       navlinks[i].style.color = '#090514'
     }
+
+    // hamburger icon
+    let ham = document.getElementById('menu-icon')
+    ham.classList.remove('dark')
+    ham.classList.add('light')
 
     let hrlines = document.getElementsByClassName('hr-line')
     for (let i = 0; i < 3; i++)
@@ -95,6 +74,11 @@ function changeTheme() {
     for (let i = 0; i < navlinks.length; i++) {
       navlinks[i].style.color = '#fff'
     }
+
+    // hamburger icon
+    let ham = document.getElementById('menu-icon')
+    ham.classList.add('dark')
+    ham.classList.remove('light')
 
     let hrlines = document.getElementsByClassName('hr-line')
     for (let i = 0; i < 3; i++) hrlines[i].style.backgroundColor = '#fff'

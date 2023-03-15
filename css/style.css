@@ -348,12 +348,17 @@ button {
   #menu-icon {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 800px) {
   .education {
     height: 130vh;
+  }
+
+  /* project div */
+  .pro-div {
+    width: auto;
+    height: auto;
   }
 
   .grid-2-cols {
@@ -364,7 +369,10 @@ button {
   }
 
   #nav-bar {
-    margin-top: 1.5rem;
+    position: fixed;
+    top: 0;
+    padding-top: 2.5rem;
+
     flex-direction: column;
     gap: 0.5rem;
     /* transition: visibility 0.25s ease-in-out; */
