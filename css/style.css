@@ -142,6 +142,11 @@ html {
   gap: 20px;
 }
 
+.pro-div .link a:hover,
+.pro-div .link a:active {
+  text-decoration: underline;
+}
+
 .carousel-item {
   display: none;
 }
@@ -432,6 +437,8 @@ button {
   display: flex;
   justify-content: left;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .dark-bg {
