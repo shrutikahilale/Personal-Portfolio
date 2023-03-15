@@ -32,7 +32,7 @@ function changeTheme() {
   var theme_bg = document.getElementById("theme-bg");
 
   if (currTheme == "dark") {
-    theme.src = "/images/moon.png";
+    theme.src = "images/moon.png";
     currTheme = "light";
 
     // theme-icon
@@ -71,7 +71,7 @@ function changeTheme() {
       contactLinks[i].style.color = "#29165b";
     }
   } else {
-    theme.src = "/images/sun.png";
+    theme.src = "images/sun.png";
     currTheme = "dark";
 
     // theme-icon
