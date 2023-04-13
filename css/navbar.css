@@ -8,8 +8,14 @@ nav {
     justify-content: flex-end;
     gap: 20px;
     font-size: 0.9rem;
-    
-    padding-right: 2rem;
+
+    padding-right: 4rem;
+
+    transition: background-color 0.5s ease-in-out;
+}
+
+nav:hover {
+    background-color: rgba(53, 53, 53, 0.24);
 }
 
 .nav-links {
