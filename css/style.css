@@ -24,7 +24,8 @@ bgcol: #090514 (body)
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
   /* padding: 0 2rem; */
 }
 
